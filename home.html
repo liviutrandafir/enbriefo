@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <title>enBriefo</title>
+
+	    <!-- Meta Tags-->
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!-- Link Tags-->
+	    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700,500,400italic' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=Exo:400,500,700' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <link href="css/bootstrap-theme.min" rel="stylesheet">
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/farbtastic.css" rel="stylesheet">
+	    <link href="css/rippler.min.css" rel="stylesheet">
+	    <link href="style.css" rel="stylesheet">
+
+	    <!-- Script Tags-->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/jquery.rippler.min.js"></script>
+	    <script src="js/farbtastic.js"></script>
+
+	    <!-- Scripts -->
+	    <script type="text/javascript">
+	    	$(function() {
+			    $('a').on('click', function(e) {
+			        e.preventDefault();
+			        var self = this;
+			        setTimeout(function() {
+			            window.location.href = self.href;
+			        }, 800);
+			    });
+			});
+
+			$(document).ready(function() {
+				$(".rippler").rippler({
+				    effectClass      :  'rippler-effect'
+				    ,effectSize      :  0
+				    ,addElement      :  'div'
+				    ,duration        :  800
+				});
+			});
+
+			if ($(window).width() > 768) { 
+				$(document).ready(function(){
+				    $(".main-header").sticky({topSpacing:0});
+				});
+			}
+	    </script>
+	</head>
+	<body>
+		<header class="header-1">
+			<div class="main-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-sm-3 col-xs-12">
+							<div class="logo-box">
+								<a href="/"><img src="img/logo.png"></a>
+							</div>
+						</div>
+						<div class="col-lg-8 col-sm-6 col-xs-3">
+							
+						</div>
+						<div class="col-lg-2 col-sm-3 col-xs-12">
+							<div class="invite-client-link">
+								<span class="rippler rippler-inverse" type="button" data-toggle="modal" data-target="#invite-modal">Invite Client</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-main-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="page-main-title-box">
+								<h1>Write your Design Project Brief in minutes</h1>
+								<p>Simply fill out some forms and get your Designer the right info into one place</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-sm-9">
+							<div class="mobile-btns clearfix visible-xs">
+								<div class="mobile-btn">
+									<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+										<i class="fa fa-bars"></i>
+									</button>
+								</div>
+								<div class="other-link">
+									<span class="modal-trigger" type="button" data-toggle="modal" data-target="#other-project-modal">Other Project</span>
+								</div>
+							</div>
+							<div id="main-nav" class="menu-box collapse navbar-collapse">
+								<ul>
+									<li class="active"><a href="#">Web UI/UX</a></li>
+									<li><a href="#">Mobile UI/UX</a></li>
+									<li><a href="#">Logo Design</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-3 hidden-xs">
+							<div class="other-link">
+								<span class="modal-trigger" type="button" data-toggle="modal" data-target="#other-project-modal">Other Project</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="page-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="custom-container">
+							<div class="page-subtitle">
+								<p>Project Name</p>
+							</div>
+							<div class="form-box">
+								<input placeholder="i.e. Dribbble Redesign 2.0">
+								<div class="custom-row">
+									<div class="blue-btn-box">
+										<a href="#" class="btn blue-btn rippler rippler-inverse">Introduce your Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer-img-box">
+							<img src="img/footer-img.png">
+						</div>
+						<div class="rights-box">
+							<p class="standard-text">Enbriefo.com a Design Briefing Tool projected by <a class="footer-link" href="#">Envaios.com</a>. All Rights Reserved 2016</p>
+						</div>
+						<div class="footer-options">
+							<a class="footer-link" href="#">Terms of Service</a>
+							<a class="footer-link" href="#">Sitemap</a>
+							<a class="footer-link" href="#">Contact</a>
+						</div>
+						<div class="footer-share">
+							<a class="facebook" href="#">Share</a>
+							<a class="twitter" href="#">Tweet @enbriefo</a>
+							<a class="p" href="#">Get it</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Invite Modal -->
+		<div class="modal fade" id="invite-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-close">
+						<button type="button" data-dismiss="modal"><img src="img/enbriefo-times.png"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-title">
+							<h2>Hey Designer, need a proper Design Brief? Invite your client...</h2>
+						</div>
+						<div class="modal-form">
+							<div class="from">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="page-subtitle">
+											<p>From</p>
+										</div>
+										<input placeholder="i.e. Edwin Drake">
+									</div>
+									<div class="col-md-6">
+										<div class="page-subtitle">
+											<p>Email</p>
+										</div>
+										<input placeholder="i.e. email@domain.com">
+									</div>
+								</div>
+							</div>
+							<div class="to">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="page-subtitle">
+											<p>To</p>
+										</div>
+										<input placeholder="i.e. Edwin Drake">
+									</div>
+									<div class="col-md-6">
+										<div class="page-subtitle">
+											<p>Email</p>
+										</div>
+										<input placeholder="i.e. email@domain.com">
+									</div>
+								</div>
+							</div>
+							<div class="custom-row">
+								<div class="pink-btn-box">
+									<a href="#" class="pink-btn rippler rippler-inverse">Send Invitation</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Other Project Modal -->
+		<div class="modal fade" id="other-project-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-close">
+						<button type="button" data-dismiss="modal"><img src="img/enbriefo-times.png"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-title">
+							<h2>Need <span style="font-style: italic; font-weight: 400;">en</span><span style="font-style: italic; font-weight: 700;">Brief</span><span style="font-style: italic; font-weight: 400;">o</span> cover other kinds of Projects?</h2>
+						</div>
+						<div class="modal-form">
+							<div class="from">
+								<div class="page-subtitle">
+									<p>Name it</p>
+								</div>
+								<input placeholder="i.e. Product Packing Design Brief">
+								<div class="page-subtitle margin-top-30">
+									<p>Describe</p>
+								</div>
+								<textarea placeholder="Add More Information about it..."></textarea>
+							</div>
+							<div class="custom-row">
+								<div class="blue-btn-box">
+									<a href="#" class="blue-btn rippler rippler-inverse">Send Feedback</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Script Tags-->
+		<script src="js/jquery.sticky.js"></script>
+	</body>
+</html>
